@@ -1,0 +1,78 @@
+{
+  "name": "react-use-backlash",
+  "version": "0.0.24",
+  "description": "useReducer with effects, the elmish way",
+  "sideEffects": false,
+  "types": "./dist/dts/index.d.ts",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/mjs/index.js",
+  "react-native": "./dist/mjs/index.js",
+  "exports": {
+    ".": {
+      "require": "./dist/cjs/index.js",
+      "default": "./dist/mjs/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "type": "module",
+  "scripts": {
+    "preversion": "npm run lint -- --fix && npm run build && npm run type-coverage",
+    "postversion": "git add . && git commit -am \"lint & docs [skip build]\" || : && git push && git push --tags",
+    "build:ts": "tsc -p configs/tsconfig.cjs.json && tsc -p configs/tsconfig.mjs.json && tsc -p configs/tsconfig.dts.json",
+    "build": "rm -rf dist && npm run build:ts && echo '{ \"type\": \"commonjs\" }' >> dist/cjs/package.json",
+    "lint": "eslint .",
+    "type-coverage": "type-coverage --detail --strict --ignore-files **/examples/** --ignore-files **/dist/**"
+  },
+  "keywords": [
+    "react",
+    "hook",
+    "reducer",
+    "effect",
+    "useReducer",
+    "useEffect",
+    "elmish"
+  ],
+  "files": [
+    "dist",
+    "src",
+    "test"
+  ],
+  "author": "iyegoroff <iegoroff@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/iyegoroff/use-backlash/issues"
+  },
+  "homepage": "https://github.com/iyegoroff/use-backlash#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iyegoroff/use-backlash.git"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.2.3",
+    "@types/node": "^18.11.9",
+    "@types/react": "^18.0.25",
+    "@typescript-eslint/eslint-plugin": "^5.44.0",
+    "@typescript-eslint/parser": "^5.44.0",
+    "eslint": "^8.28.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-config-standard-with-typescript": "^23.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-no-null": "^1.0.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "prettier": "^2.8.0",
+    "type-coverage": "^2.24.1",
+    "typescript": "^4.9.3"
+  },
+  "peerDependencies": {
+    "react": "*"
+  },
+  "typeCoverage": {
+    "atLeast": 99.9
+  },
+  "dependencies": {
+    "use-backlash": "^0.0.25"
+  }
+}
