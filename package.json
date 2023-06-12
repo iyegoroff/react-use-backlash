@@ -42,12 +42,12 @@
   "author": "iyegoroff <iegoroff@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/iyegoroff/use-backlash/issues"
+    "url": "https://github.com/iyegoroff/react-use-backlash/issues"
   },
-  "homepage": "https://github.com/iyegoroff/use-backlash#readme",
+  "homepage": "https://github.com/iyegoroff/react-use-backlash#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/iyegoroff/use-backlash.git"
+    "url": "git+https://github.com/iyegoroff/react-use-backlash.git"
   },
   "devDependencies": {
     "@types/node": "^20.3.0",
