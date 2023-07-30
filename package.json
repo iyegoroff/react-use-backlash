@@ -1,7 +1,7 @@
 {
   "name": "react-use-backlash",
   "version": "0.0.29",
-  "description": "useReducer with effects, the elmish way",
+  "description": "useReducer with effects",
   "sideEffects": false,
   "types": "./dist/dts/index.d.ts",
   "main": "./dist/cjs/index.js",
@@ -31,8 +31,7 @@
     "reducer",
     "effect",
     "useReducer",
-    "useEffect",
-    "elmish"
+    "useEffect"
   ],
   "files": [
     "dist",
@@ -75,6 +74,6 @@
     "atLeast": 100
   },
   "dependencies": {
-    "use-backlash": "^0.0.29"
+    "use-backlash": "^0.0.30"
   }
 }

@@ -8,7 +8,7 @@
 [![bundlejs](https://deno.bundlejs.com/?q=react-use-backlash@0.0.29,react-use-backlash@0.0.29&treeshake=%5B*%5D,%5B%7B+default+%7D%5D&config=%7B%22esbuild%22:%7B%22external%22:%5B%22react%22%5D%7D%7D&badge=)](https://bundlejs.com/?q=react-use-backlash)
 [![npm](https://img.shields.io/npm/l/react-use-backlash.svg?t=1495378566926)](https://www.npmjs.com/package/react-use-backlash)
 
-useReducer with effects, the elmish way
+useReducer with effects
 
 ## Getting started
 
