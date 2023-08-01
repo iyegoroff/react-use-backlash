@@ -74,6 +74,6 @@
     "atLeast": 100
   },
   "dependencies": {
-    "use-backlash": "^0.0.30"
+    "use-backlash": "^0.0.31"
   }
 }
