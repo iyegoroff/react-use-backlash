@@ -1,11 +1,11 @@
 {
   "compilerOptions": {
+    "declaration": true,
     "sourceMap": true,
     "target": "ES2018",
     "strict": true,
     "jsx": "react",
     "moduleResolution": "node",
-    "removeComments": true,
     "noEmitOnError": true,
     "esModuleInterop": true,
     "noUnusedLocals": true,
@@ -13,6 +13,6 @@
     "noImplicitReturns": true,
     "allowUnreachableCode": false,
     "noUncheckedIndexedAccess": true,
-    "noFallthroughCasesInSwitch": true,
+    "noFallthroughCasesInSwitch": true
   }
 }
